@@ -18,8 +18,8 @@ public class Main {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection(url,username,password);
 			Statement st = con.createStatement();
-//			st.execute("insert into students(name,email,phone) values('Pramukh','pramukhprajapati@gmail.com','1597532584')");
-//			st.execute("insert into students(name,email,phone) values('Pintu','kaleja@gmail.com','1236547896')");
+		        st.execute("insert into students(name,email,phone) values('Dhruvin','dhruvinpatel@gmail.com','1597532584')");
+			st.execute("insert into students(name,email,phone) values('Pintu','kaleja@gmail.com','1236547896')");
 			
 			ResultSet rs = st.executeQuery("select * from students");
 			while(rs.next()) {
